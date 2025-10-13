@@ -1,0 +1,6 @@
+swipe:
+  4:
+    left:
+      command: hyprctl dispatch workspace r+1
+    right:
+      command: hyprctl dispatch workspace r-1

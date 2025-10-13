@@ -1,0 +1,86 @@
+# Dotfiles .gitignore
+
+# Cache directories
+**/cache/
+**/Cache/
+**/CachedData/
+**/CachedExtensions/
+**/CachedProfilesData/
+**/blob_storage/
+**/GPUCache/
+**/DawnGraphiteCache/
+**/DawnWebGPUCache/
+**/Code Cache/
+**/Service Worker/
+**/Local Storage/
+**/Session Storage/
+**/WebStorage/
+**/Shared Dictionary/
+
+# Log files
+**/*.log
+**/logs/
+**/Crash Reports/
+**/Crashpad/
+
+# Temporary files
+**/*~
+**/*.tmp
+**/*.swp
+**/*.bak
+**/*.backup
+
+# Browser specific files
+**/Cookies*
+**/DIPS*
+**/Network Persistent State
+**/Trust Tokens*
+**/TransportSecurity
+**/Preferences
+**/machineid
+**/SharedStorage*
+**/first_party_sets.db*
+**/First Run
+**/Last Version
+**/Local State
+**/Variations
+
+# Personal/sensitive files
+**/*secret*
+**/*private*
+**/*password*
+**/*token*
+
+# Lock files
+**/*.lock
+**/code.lock
+
+# Large binary files
+**/*.db
+**/*.db-journal
+**/*.db-wal
+
+# Exclude specific directories entirely
+chromium/
+Code/
+"Code - OSS"/
+mozilla/
+Signal/
+spotify/
+pulse/
+session/
+systemd/
+
+# But include important config files in some directories
+!waybar/
+!hypr/
+!nvim/
+!kitty/
+!wofi/
+!mako/
+!swaync/
+!waybar/
+!zsh/
+!starship.toml
+!mimeapps.list
+!user-dirs.*

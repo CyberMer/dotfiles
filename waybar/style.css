@@ -1,0 +1,265 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family:  "Amiri", "JetBrainsMono Nerd Font","FiraCode Nerd Font", monospace;
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+}
+
+#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+#tooltip {
+    background: #1e1e2e;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #11111b;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc8;
+}
+
+#workspaces button.focused {
+    color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+#custom-weather,
+#custom-launcher,
+#custom-power,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#custom-notification,
+#backlight {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid #181825;
+}
+
+#temperature {
+    color: #eba0ac;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+}
+
+#temperature.critical {
+    color: #eba0ac;
+}
+
+#cpu {
+    color: #fab387;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#memory {
+    color: #a6e3a1;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#backlight {
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+
+#workspaces {
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    color: #fab387;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 10px;
+    border-right: 0px;
+}
+
+#network {
+    color: #f9e2af;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: #89b4fa;
+    border-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+} 
+
+#pulseaudio {
+    color: #89b4fa;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: #cba6f7;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#battery {
+    color: #a6e3a1;
+    border-radius: 0 10px 10px 0;
+    margin-right: 10px;
+    border-left: 0px;
+}
+
+#custom-weather {
+    border-radius: 0px 10px 10px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+}
+
+#custom-media {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid #181825;
+    border-radius: 10px;
+}
+
+#taskbar {
+  background: #1e1e2e;
+  opacity: 0.8;
+  border: 1px solid #181825;
+  border-radius: 10px;
+  margin: 3px 10px;
+  margin-top: 10px;
+  padding: 0 6px;           /* same feel as other pills */
+}
+
+/* App buttons */
+#taskbar button {
+  color: #a6adc8;           /* like workspaces text */
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 10px;
+  margin: 4px 2px;
+}
+
+/* Hover (same vibe as workspaces hover) */
+#taskbar button:hover {
+  background: #11111b;
+  color: #cdd6f4;
+}
+
+/* Focused/active window (mirror workspaces .focused) */
+#taskbar .active,
+#taskbar .focused {
+  background: rgb(67, 81, 212);
+  color: #11111b;           /* readable on the pink */
+  border-radius: 8px;
+}
+
+/* Urgent windows (match your urgent workspace) */
+#taskbar .urgent {
+  background: #da6541;
+  color: #11111b;
+  border-radius: 8px;
+}
+
+/* Optional: de-emphasize minimized apps */
+#taskbar .minimized {
+  opacity: 0.6;
+}
+
+/* Notification styling */
+#custom-notification {
+    background: #1e1e2e;
+    opacity: 0.8;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 10px;
+    border: 1px solid #181825;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+    color: rgb(67, 81, 212); 
+    border-left: 0px;
+    min-width: 20px;
+}
+
+#tray {
+    color: #cdd6f4;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* Command Center Styling */
+#custom-launcher {
+    color: #89b4fa;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#custom-launcher:hover {
+    background: #89b4fa;
+    color: #1e1e2e;
+}
+
+#custom-power {
+    color: rgb(67, 81, 212);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+#custom-power:hover {
+    background: rgb(67, 81, 212);
+    color: #1e1e2e;
+}
+
